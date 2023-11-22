@@ -1,9 +1,7 @@
+function alterarStatusMonopoly(){
+    let link = document.getElementById('botaoMonopoly');
 
-
-function alterarStatus(){
-
-    
-    const button = document.querySelector("button");
-    button.setAttribute("disabled","true");
-
+    if(link.innerHTML === 'Alugar'){
+        link.innerHTML = 'Devolver'
+    }
 }
