@@ -20,25 +20,25 @@
         <section class="dashboard">
             <ul class="dashboard__items">
                 <li class="dashboard__items__item" id="game-1">
-                    <div id="fundo" class="dashboard__item__img">
+                    <div id="capaMonopoly" class="dashboard__item__img">
                         <img src="img/monopoly.png" alt="Capa jogo Monopoly">
                     </div>
                     <p class="dashboard__item__name">Monopoly</p>
-                    <a  id="botaoMonopoly" onclick="alterarStatusMonopoly()" href="#" class="dashboard__item__button" >Alugar</a>
+                    <a  id="botaoMonopoly" onclick="alterarStatusMonopoly()" href="#" class="dashboard__item__button">Alugar</a>
                 </li>
                 <li class="dashboard__items__item" id="game-2">
-                    <div id="fundo" class="dashboard__item__img">
+                    <div id="capaRide" class="dashboard__item__img">
                         <img src="img/ticket_to_ride.png" alt="Capa jogo Ticket to Ride">
                     </div>
                     <p class="dashboard__item__name">Ticket to Ride</p>
-                    <a  id="botaoRide" onclick="alterarStatusRide()" href="#" class="dashboard__item__button">Alugar</a>
+                    <a  id="botaoRide" onclick="alterarStatusBotaoRide()" href="#" class="dashboard__item__button">Alugar</a>
                 </li>
                 <li class="dashboard__items__item" id="game-3">
-                    <div  id="fundo" class="dashboard__item__img dashboard__item__img--rented">
+                    <div id="capaTakenoko" class="dashboard__item__img dashboard__item__img--rented">
                         <img src="img/takenoko.png" alt="Capa jogo Takenoko">
                     </div>
                     <p class="dashboard__item__name">Takenoko</p>
-                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                    <a id="botaoTakenoko" onclick="alterarStatusBotaoTakenoko()" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
                 </li>
             </ul>
         </section>

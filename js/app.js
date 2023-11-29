@@ -1,62 +1,56 @@
 
-
-
-// função faz analise se foi devolvido ou alugado
-function alterarStatusMonopoly(){
-
-    // função que faz o fundo ficar escuro
-function mudaFundoParaEscuro(){
-    let fundo = document.getElementById('fundo');
-    let fundoBotao = document.getElementById('botaoMonopoly');
-
-    fundo.className = 'dashboard__item__img--rented';
-    fundoBotao.className = 'dashboard__item__button dashboard__item__button--return';
-}
-
-// função que faz o fundo ficar claro e o botão fica azul novamente
-function mudaFundoParaClaro(){
-    let fundo = document.getElementById('fundo');
-    let fundoBotao = document.getElementById('botaoMonopoly');
-
-
-    fundo.classList.remove('dashboard__item__img--rented');     
-    fundoBotao.classList.remove('dashboard__item__button--return');
-}
-
-
-    let link = document.getElementById('botaoMonopoly');
-    // alteraçaõ do status do botao
-    if(link.innerHTML === 'Alugar'){
-        link.innerHTML = 'Devolver';
-        mudaFundoParaEscuro();
-        
-        
-    }else{
-        link.innerHTML = 'Alugar'
-        mudaFundoParaClaro();  
-
-    }
-}
-
-
-
-
-
-function alterarStatusRide(){
-
+function alterarStatusMonopoly() {
+    var botao = document.getElementById("botaoMonopoly");
+    var capa = document.getElementById("capaMonopoly");
    
 
-    let link = document.getElementById('botaoRide');
-    // alteraçaõ do status do botao
-    if(link.innerHTML === 'Alugar'){
-        link.innerHTML = 'Devolver';
-        mudaFundoParaEscuro();
-        
+    if (botao.innerHTML==="Alugar"){
+
+        botao.classList.add("dashboard__item__button--return");
+        capa.classList.add("dashboard__item__img--rented");
+
+        botao.innerHTML="Devolver";
+
     }else{
-        link.innerHTML = 'Alugar'
-        
+
+        botao.classList.remove("dashboard__item__button--return");
+        capa.classList.remove("dashboard__item__img--rented");
+        botao.innerHTML = "Alugar";
+    }
+}
+
+function alterarStatusBotaoRide() {
+    var botao = document.getElementById("botaoRide");
+    var capa = document.getElementById("capaRide");
+
+    if  (botao.innerHTML==="Alugar"){
+
+        botao.classList.add("dashboard__item__button--return");
+        capa.classList.add("dashboard__item__img--rented");
+        botao.innerHTML = "Devolver";
+    }else{
+
+        botao.classList.remove("dashboard__item__button--return");
+        capa.classList.remove("dashboard__item__img--rented");
+        botao.innerHTML = "Alugar"
     }
 
 }
 
+function alterarStatusBotaoTakenoko(){
+    var botao = document.getElementById("botaoTakenoko");
+    var capa = document.getElementById("capaTakenoko");
 
+    if (botao.innerHTML==="Alugar"){
+
+        botao.classList.add("dashboard__item__button--return");
+        capa.classList.add("dashboard__item__img--rented");
+        botao.innerHTML = "Devolver";
+
+    }else{
+
+        botao.classList.remove("dashboard__item__button--return");
+        capa.classList.remove("dashboard__item__img--rented");
+        botao.innerHTML = "Alugar";
+    }
+}
