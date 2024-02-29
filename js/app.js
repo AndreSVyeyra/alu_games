@@ -9,7 +9,7 @@ function alterarStatusMonopoly() {
         botao.classList.add("dashboard__item__button--return");
         capa.classList.add("dashboard__item__img--rented");
 
-        botao.innerHTML="Devolver";
+        botao.innerHTML="Devolver"
 
     }else{
 
